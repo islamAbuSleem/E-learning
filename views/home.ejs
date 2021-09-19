@@ -1,11 +1,15 @@
 <%- include('includes/header.ejs') %>
+<link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+
 <%- include('includes/navbar.ejs') %>
 
 <!-- start welcome section -->
-    <section class="bg-gray-50 py-10">
+    <section class="py-10 mb-5 relative">
+        <img src="https://img-c.udemycdn.com/notices/web_banner/image_udlite/4f9d4123-43ee-4f2a-b5ef-1f2ac22962f3.jpg" alt="" class="absolute top-0 left-0 w-full z-0">
         <div class="container mx-auto">
-            <div class="grid grid-cols-2 grid-rows-1 gap-4">
-                <div class="card bg-white px-4 py-10 shadow-md w-2/3 rounded mx-8 h-3/5 self-center">
+                <div class="card bg-white px-4 py-10 mt-7 shadow-md w-1/3 rounded mx-8 h-3/5 self-center z-40 relative">
                     <h2 class="text-4xl font-bold text-gray-800">Searching for new Experience?</h2>
                     <p class="my-3 text-lg text-gray-700">Here You will find Everything you are looking for.</p>
                     <div class="search flex relative">
@@ -14,20 +18,33 @@
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                           </svg></button>
                     </div>
-                </div>
-                <div class="img flex justify-center">
+                <!-- <div class="img flex justify-center">
                     <img src="https://cdn.shopify.com/s/files/1/0016/8892/8331/products/70f1cb0d1d7e4b2e959dea8dc31f8e44_1024x1024.png?v=1571834841" alt="Hurry up! its learning time." class="">
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 <!-- end welcome section -->
 
 <!-- start suggsted courses -->
-<section class="py-4">
+<section class="suggsted-courses py-10 mt-10">
     <div class="container mx-auto">
-        <h2 class="text-4xl font-bold">Here are some of courses</h2>
-        
+        <h2 class="text-4xl font-bold mt-4 text-gray-900">A broad selection of courses</h2>
+        <p class="text-lg mt-3">Choose from 155,000 online video courses with new additions published every month</p>
+        <ul class="course-tabs mt-8 flex">
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 active"><a href="#">Python</a></li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Excel</a></li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Web Development</a></li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">JavaScript</a></li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Data Science</a></li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">AWS Certification</a></li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Drawing</a></li>
+        </ul>
+        <div class="tab-content border border-gray-300 w-full p-8 mt-5">
+            <h2 class="text-3xl font-bold mb-3">Expand your career opportunities with Python</h2>
+            <p class="w-2/3 mb-4">Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills you can learn. Python's simple syntax is especially suited for desktop, web, and business applications. Python's design philosophy emphasizes readability and usability. Python was developed...</p>
+            <button class=" bg-white border border-gray-700 py-2 px-5 hover:bg-gray-50 transition duration-900 ease-in-out text-gray-700 font-bold"><a href="/login">Explore Python</a></button>
+        </div>
     </div>
 </section>
 <!-- end suggsted courses -->
