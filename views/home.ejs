@@ -1,8 +1,11 @@
 <%- include('includes/header.ejs') %>
+<!-- custom css styles -->
 <link rel="stylesheet" href="/styles/home.css">
+<!-- closing head -->
 </head>
 <body>
-
+    
+<!-- navbar -->
 <%- include('includes/navbar.ejs') %>
 
 <!-- start welcome section -->
@@ -32,13 +35,13 @@
         <h2 class="text-4xl font-bold mt-4 text-gray-900">A broad selection of courses</h2>
         <p class="text-lg mt-3">Choose from 155,000 online video courses with new additions published every month</p>
         <ul class="course-tabs mt-8 flex">
-            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 active"><a href="#">Python</a></li>
-            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Excel</a></li>
-            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Web Development</a></li>
-            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">JavaScript</a></li>
-            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Data Science</a></li>
-            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">AWS Certification</a></li>
-            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900"><a href="#">Drawing</a></li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 cursor-pointer active" data-tab="Python">Python</li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 cursor-pointer" data-tab="Excel">Excel</li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 cursor-pointer" data-tab="Web-Development">Web Development</li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 cursor-pointer" data-tab="JavaScript">JavaScript</li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 cursor-pointer" data-tab="Data-Science">Data Science</li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 cursor-pointer" data-tab="AWS-Certification">AWS Certification</li>
+            <li class="mx-2 font-bold text-gray-600 hover:text-gray-900 cursor-pointer" data-tab="Drawing">Drawing</li>
         </ul>
         <div class="tab-content border border-gray-300 w-full p-8 mt-5">
             <h2 class="text-3xl font-bold mb-3">Expand your career opportunities with Python</h2>
@@ -50,5 +53,5 @@
 <!-- end suggsted courses -->
 
 
-
+<script src="/scripts/home.js"></script>
 <%- include('includes/footer.ejs') %>
