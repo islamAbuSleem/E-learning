@@ -1,6 +1,21 @@
 .nav .logo img{
     width: 91px;
 }
+#udemy-business,#teach-udemy{
+    top: 80px;
+}
+#teach-udemy{
+    right: 20vw;
+}
+#business > a:hover + #udemy-business{
+    display: block !important;
+}
+#teach > a:hover + #teach-udemy{
+    display: block !important;
+}
 .suggsted-courses .course-tabs .active{
     color: #111827;
+}
+#icon-cart:hover{
+ fill: #a435f0;
 }
