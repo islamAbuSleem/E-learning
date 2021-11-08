@@ -7,15 +7,29 @@
 #teach-udemy{
     right: 20vw;
 }
+#udemy-business{
+    right: 30vw;
+}
+#teach > a:hover + #teach-udemy,
 #business > a:hover + #udemy-business{
     display: block !important;
 }
-#teach > a:hover + #teach-udemy{
-    display: block !important;
-}
+
 .suggsted-courses .course-tabs .active{
     color: #111827;
 }
 #icon-cart:hover{
  fill: #a435f0;
+}
+.suggsted-courses .tab-content .courses .single-course:last-child,
+.students-viewing  .courses .single-course:last-child{
+    margin-right: 0 !important;
+}
+
+.Learn-in-demand {
+    background-color:#F8F9FB
+}
+.students-viewing .bestseller{
+    background-color:#eceb98;
+    color: #3d3c0a;
 }
